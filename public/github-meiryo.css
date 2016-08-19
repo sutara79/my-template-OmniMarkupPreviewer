@@ -1,5 +1,5 @@
 html {
-  font-family: Meiryo, sans-serif;
+  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -97,7 +97,7 @@ pre {
 }
 
 code,kbd,pre,samp {
-  font-family: Consolas, Meiryo, monospace, monospace;
+  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -287,21 +287,20 @@ ul,ol {
   margin-bottom: 0;
 }
 
-/*ol ol,ul ol {
+ol ol,ul ol {
   list-style-type: lower-roman;
-  
 }
 
 ul ul ol,ul ol ol,ol ul ol,ol ol ol {
   list-style-type: lower-alpha;
-}*/
+}
 
 dd {
   margin-left: 0;
 }
 
 tt,code {
-  font-family: Consolas, Meiryo, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 12px;
 }
 
@@ -359,7 +358,7 @@ pre {
 
 .markdown-body {
   overflow: hidden;
-  font-family: Meiryo, "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   word-wrap: break-word;
@@ -423,7 +422,7 @@ pre {
   padding-bottom: 0.3em;
   font-size: 2.25em;
   line-height: 1.2;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
 }
 
 .markdown-body h1 .anchor {
@@ -434,7 +433,7 @@ pre {
   padding-bottom: 0.3em;
   font-size: 1.75em;
   line-height: 1.225;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
 }
 
 .markdown-body h2 .anchor {
@@ -484,7 +483,7 @@ pre {
   height: 4px;
   padding: 0;
   margin: 16px 0;
-  background-color: #ccc;
+  background-color: #e7e7e7;
   border: 0 none;
 }
 
@@ -803,6 +802,36 @@ pre {
 .codehilite .vi { color: #008080 } /* Name.Variable.Instance */
 .codehilite .il { color: #009999 } /* Literal.Number.Integer.Long */
 
+/**************************
+ * 独自追加
+ **************************/
+/**
+ * メイリオ
+ */
+html {
+  font-family: Meiryo, sans-serif;
+}
+code,
+kbd,
+pre,
+samp,
+tt {
+  font-family: Consolas, Meiryo, monospace;
+}
+.markdown-body {
+  font-family: Meiryo, sans-serif;
+}
+/**
+ * 順序付きリストのマーカーをdecimalに
+ */
+ol ol,
+ul ol,
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+  list-style-type: decimal;
+}
 /**
  * 印刷用
  */
